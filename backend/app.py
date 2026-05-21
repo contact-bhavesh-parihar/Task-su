@@ -3,12 +3,12 @@ from flask_jwt_extended import JWTManager
 from flask_bcrypt import Bcrypt
 import os
 
-from backend.config import Config
-from backend.model import db
-from backend.routes.auth import auth_bp
-from backend.routes.project import projects_bp
-from backend.routes.task import tasks_bp
-from backend.routes.dashboard import dashboard_bp
+from config import Config
+from model import db
+from routes.auth import auth_bp
+from routes.project import projects_bp
+from routes.task import tasks_bp
+from routes.dashboard import dashboard_bp
 
 app = Flask(__name__)
 
