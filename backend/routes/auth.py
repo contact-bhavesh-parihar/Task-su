@@ -28,7 +28,7 @@ def signup():
             "error": "Email already exists"
         }), 400
 
-    hashed_password = generate_password_hash(password).decode('utf-8')
+    hashed_password = generate_password_hash(password)
 
     new_user = User(
         name=name,
